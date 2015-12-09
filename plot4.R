@@ -22,9 +22,9 @@ plot4 <- function () {
         par(mfcol=c(2,2))
         
         # Graph 1
-        with(df2,{
+        with(df2,
                 plot(Date,Global_active_power,type="l",xlab="",ylab="Global Active Power (kilowatts)")
-        })
+        )
         
         # Graph 2
         with(df2,{
@@ -36,10 +36,10 @@ plot4 <- function () {
         legend("topright",col=c("black","red","blue"),legend=names(df2)[7:9],lty=1)
         
         # Graph 3
-        with(df2,{plot(Date,Voltage,type="l")})
+        with(df2,plot(Date,Voltage,type="l"))
         
         # Graph 4
-        with(df2,{plot(Date,Global_reactive_power,type="l")})
+        with(df2,plot(Date,Global_reactive_power,type="l"))
         
         dev.off()
         
