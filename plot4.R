@@ -30,7 +30,7 @@ plot4 <- function () {
         with(df2,{
                 plot(Date,Sub_metering_1,type="l",ylab="Energy sub metering")
                 points(Date,Sub_metering_2,type="l",col="red")
-                points.default(Date,Sub_metering_3,type="l",col="blue")
+                points(Date,Sub_metering_3,type="l",col="blue")
         })
         
         legend("topright",col=c("black","red","blue"),legend=names(df2)[7:9],lty=1)
